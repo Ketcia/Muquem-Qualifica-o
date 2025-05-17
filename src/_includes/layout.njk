@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <title>{{ title }}</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="link-menu">
+        <button id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+      </div>
+      <div class="logo">
+        <img src="../assets/img/logo.png" alt="logo">
+      </div>
+      
+    </nav>
+  </header>
+
+  <nav id="side-bar">
+    <li>
+      <button class="menu-item">Livro 1</button>
+    </li>
+    <li>
+      <button class="menu-item">Livro 2</button>
+    </li>
+    <li>
+      <button class="menu-item">Livro 3</button>
+    </li>
+    <li>
+      <button class="menu-item">Livro 4</button>
+    </li>
+  </nav>
+
+  <main class="container">
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <p>© 2025 Meu Site de Atividades</p>
+  </footer>
+
+  <script src="/assets/js/menu.js"></script>
+  
+</body>
+</html>
+
